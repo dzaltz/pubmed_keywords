@@ -1,14 +1,14 @@
 # Extracting keywords from PubMed Data
 
-[Summary]{.underline}
+## **Summary**
 
 The purpose of this brief repository is to describe methods to pull data from PubMed and analyze patterns in keywords that appear across recently-published studies among a group of researchers. All data in this repository are publicly available. As a motivating example, and in anticipation of a job-talk for a tenure-track position at the [University of Ottawa School of Epidemiology and Public Health (SEPH)](https://www.uottawa.ca/faculty-medicine/epidemiology), I show how we can take a list of faculty members and quickly review general topics of their recent publications.
 
-[Data]{.underline}
+## **Data**
 
 The primary data used in this repository is a simple list of names of all current faculty in the school. This process may be suitable for webscraping, but [the list](https://www.uottawa.ca/faculty-medicine/epidemiology/faculty) was easily copied and pasted into a tabular spreadsheet. As of June 17, 2025, there were 33 faculty members listed as current at the UOttawa SEPH.
 
-[Workflow]{.underline}
+## **Workflow**
 
 The entire process is contained within a single script in the \code subfolder. It is divided into 8 sections and a setup:
 
