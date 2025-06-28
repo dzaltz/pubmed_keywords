@@ -10,14 +10,12 @@ The primary data used in this repository is a simple list of names of all curren
 
 ## **Workflow**
 
-The entire process is contained within a single script in the \code subfolder. It is divided into 8 sections and a setup:
+The code is divided into three scripts:
 
-0.  Setup - here we load libraries [tidyverse](https://www.tidyverse.org/), for general coding purposes, and [here](https://here.r-lib.org/), for easy file retrieval.
-1.  Load data - read in the tabular list of all faculty members
-2.  Process text - prepare each name to be included in a custom URL
-3.  Generate URLs - create unique URLs which we will use to search for each faculty members' respective PubMed records from the last five years.
-4.  Pull data - read in data directly from PubMed for each faculty member
-5.  Unlist data - wrangle web data into an easily-edited format
-6.  Process data - pull only lines corresponding to keywords from each listed manuscript, remove special characters
-7.  Clean errors - for the sake of time and brevity, we conduct a visual inspection of the most common keywords to make sure we are not including close matches as distinct words (e.g., trial and trials, review and reviews).
-8.  Output popular keywords - output a table of the keywords that occur across all faculty manuscripts ten or more times
+1. /code/1_pull_pubmed_data.R: this shows how the data are gathered and processed for further analysis
+2. /code/2_coauthor_network.R: this shows how to create an animated network of coauthorships
+3. /code/3_top_keywords.R: this shows how to create a race chart for top keywords, as well as a growing line chart for specific keywords over time
+
+## **TO DO**
+
+All scripts are commented fairly well, but I may be inclined to continue the tutorial here. Just no time to do so at the moment...
